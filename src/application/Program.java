@@ -43,6 +43,14 @@ public class Program {
 		
 		System.out.println("==== New Seller " + newSeller.getId());
 		
+		System.out.println("==== TESTE 5 seller UPDATE ==== ");
+
+		seller = sellerDao.findById(1);
+		seller.setName("Leonardo");
+		sellerDao.update(seller);
+		
+		System.out.println("==== Update completed ");
+		
 		
 	}
 
